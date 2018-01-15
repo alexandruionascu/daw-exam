@@ -7,6 +7,8 @@
             belowOrigin: true
         }
     );
+    // INPUT SELECTS
+    $('select').material_select();
     // TABS
     $('ul.tabs').tabs();
     // SCROLLSPY

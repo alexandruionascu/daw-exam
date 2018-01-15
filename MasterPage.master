@@ -16,7 +16,9 @@
             <div class="nav-wrapper">
                 <div class="row">
                     <div class="col s12">
-                        <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                            <i class="material-icons">menu</i>
+                        </a>
                         <a href="Default.aspx" class="brand-logo">DAW Exam</a>
                     </div>
                 </div>
@@ -37,7 +39,7 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">DAW Exam</h5>
-                <p class="grey-text text-lighten-4">We are a non-profit news organization. All rights reserved.</p>
+                <p class="grey-text text-lighten-4">May be used for academic and educational purposes. All rights reserved.</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
@@ -51,7 +53,7 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-                © 2018 News Dotnet
+                © 2018 DAW Exam
             </div>
           </div>
     </footer>
