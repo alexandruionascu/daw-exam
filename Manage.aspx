@@ -3,5 +3,5 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
     <h1>Read Update Delete</h1>
-    <uc:MaterialTable runat="server" />
+    <uc:MaterialTable runat="server" Editable="true" />
 </asp:Content>

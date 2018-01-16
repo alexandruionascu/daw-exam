@@ -5,9 +5,10 @@
         <td><%# Instance.description %></td>
         <td><%# Instance.brand %></td>
         <td><%# Instance.launchDate.ToString("yyyy-MM-dd") %></td>
-
+        <% if (Editable) { %>
         <td><a runat="server" onserverclick="Edit_Click"><i class="material-icons">mode_edit</i></a></td>
         <td><a runat="server" onserverclick="Delete_Click"><i class="material-icons">delete</i></a></td>
+        <% } %>
     </tr>
 </asp:Panel>
 <asp:Panel runat="server" ID="editPanel">

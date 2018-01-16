@@ -45,8 +45,8 @@
                 <h5 class="white-text">Links</h5>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="Default.aspx">Home</a></li>
-                  <li><a class="grey-text text-lighten-3" href="Login.aspx">Login</a></li>
-                  <li><a class="grey-text text-lighten-3" href="Register.aspx">Register</a></li>
+                  <li><a class="grey-text text-lighten-3" href="Create.aspx">Create</a></li>
+                  <li><a class="grey-text text-lighten-3" href="Manage.aspx">Read / Update / Delete</a></li>
                 </ul>
               </div>
             </div>

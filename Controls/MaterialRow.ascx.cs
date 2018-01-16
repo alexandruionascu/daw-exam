@@ -10,7 +10,8 @@ public partial class Controls_MaterialRow : System.Web.UI.UserControl
 {
    
     public Smartphone Instance { get; set; }
-    public string TableName { get; set; }         
+    public string TableName { get; set; }  
+    public bool Editable { get; set; }
 
     protected void Page_Load(object sender, EventArgs e)
     {
