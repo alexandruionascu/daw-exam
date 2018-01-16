@@ -29,8 +29,10 @@ public class SQLGeneration
 
     public static string generateInsertQuery<T>(T instance, string tableName)
     {
-        var propValuePairs = getPropValuePairs<T>(instance);
-
+        var primaryKeyProperties = getPrimaryKeyProperties<T>();
+        var propValuePairs = getPropValuePairs<T>(instance).Where(
+            pair => !primaryKeyProperties.Any(pk => pk.Name == pair.Item1)
+        );
         return String.Format("INSERT INTO {0} ({1}) VALUES ({2});",
             tableName,
             String.Join(",", propValuePairs.Select(x => x.Item1)),
