@@ -16,7 +16,21 @@ public class SQLGeneration
     private static IEnumerable<Tuple<string, object>> getPropValuePairs<T>(T instance)
     {
         Func<object, object> encapsulateString =
-            (x) => String.Format("'{0}'", x == null ? String.Empty : x);
+            (x) =>
+            {
+                if (x == null)
+                {
+                    return "''";
+                } 
+                else if (x is DateTime)
+                {
+                    return String.Format("'{0}'", ((DateTime)x).ToString("yyyy-MM-dd"));
+                } 
+                else
+                {
+                    return String.Format("'{0}'", x);
+                }
+            };
         return typeof(T).GetProperties().Select(
             x => Tuple.Create(
                 x.Name,
